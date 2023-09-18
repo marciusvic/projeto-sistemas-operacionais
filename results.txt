@@ -1,0 +1,103 @@
+Testes com duas matrizes 2350x2350 geradas pelo auxiliar.cpp
+
+Sequencial 1: 125378 (ms)
+Sequencial 2: 123013 (ms)
+Sequencial 3: 125074 (ms)
+Sequencial 4: 125546 (ms)
+Sequencial 5: 124832 (ms)
+Sequencial 6: 125274 (ms)
+Sequencial 7: 124991 (ms)
+Sequencial 8: 124709 (ms)
+Sequencial 9: 124672 (ms)
+Sequencial 10: 125163 (ms)
+
+Média: 124865,2(ms)
+
+Threads(com 8) 1: 309193 (ms)
+Threads(com 8) 2: 316128 (ms)
+Threads(com 8) 3: 320145 (ms)
+Threads(com 8) 4: 302980 (ms)
+Threads(com 8) 5: 321954 (ms)
+Threads(com 8) 6: 319264 (ms)
+Threads(com 8) 7: 312173 (ms)
+Threads(com 8) 8: 306468 (ms)
+Threads(com 8) 9: 303498 (ms)
+Threads(com 8) 10: 309711 (ms)
+
+Média: 312856,6(ms)
+
+Threads(com 4) 1: 157355 (ms)
+Threads(com 4) 2: 184229 (ms)
+Threads(com 4) 3: 171082 (ms)
+Threads(com 4) 4: 157837 (ms)
+Threads(com 4) 5: 158529 (ms)
+Threads(com 4) 6: 173549 (ms)
+Threads(com 4) 7: 163934 (ms)
+Threads(com 4) 8: 150294 (ms)
+Threads(com 4) 9: 164838 (ms)
+Threads(com 4) 10: 189251 (ms)
+
+Média: 167394,5(ms)
+
+Threads (com 2) 1: 127357 (ms)
+Threads (com 2) 2: 139345 (ms)
+Threads (com 2) 3: 129038 (ms)
+Threads (com 2) 4: 163849 (ms)
+Threads (com 2) 5: 158363 (ms)
+Threads (com 2) 6: 177013 (ms)
+Threads (com 2) 7: 135923 (ms)
+Threads (com 2) 8: 173976 (ms)
+Threads (com 2) 9: 168425 (ms)
+Threads (com 2) 10: 133784 (ms)
+
+Média: 150107,5(ms)
+
+Processos(com 8) 1: 217318 (ms)
+Processos(com 8) 2: 235373 (ms)
+Processos(com 8) 3: 231883 (ms)
+Processos(com 8) 4: 223485 (ms)
+Processos(com 8) 5: 251933 (ms)
+Processos(com 8) 6: 226242 (ms)
+Processos(com 8) 7: 239517 (ms)
+Processos(com 8) 8: 248887 (ms)
+Processos(com 8) 9: 210062 (ms)
+Processos(com 8) 10: 227229 (ms)
+
+Média: 231592,7(ms)
+
+Processos (com 4) 1: 153300 (ms)
+Processos (com 4) 2: 168560 (ms)
+Processos (com 4) 3: 169328 (ms)
+Processos (com 4) 4: 157534 (ms)
+Processos (com 4) 5: 163093 (ms)
+Processos (com 4) 6: 166282 (ms)
+Processos (com 4) 7: 159622 (ms)
+Processos (com 4) 8: 159924 (ms)
+Processos (com 4) 9: 167229 (ms)
+Processos (com 4) 10: 170201 (ms)
+
+Média: 163207,3(ms) 
+
+Processos (com 2) 1: 164622 (ms)
+Processos (com 2) 2: 149376 (ms)
+Processos (com 2) 3: 152122 (ms)
+Processos (com 2) 4: 154220 (ms)
+Processos (com 2) 5: 167381 (ms)
+Processos (com 2) 6: 153472 (ms)
+Processos (com 2) 7: 168973 (ms)
+Processos (com 2) 8: 150124 (ms)
+Processos (com 2) 9: 171203 (ms)
+Processos (com 2) 10: 147123 (ms)
+
+Média: 158956,3(ms) 
+
+a) Qual o motivo dos resultados obtidos no experimento E1? O que pode ter causado o
+comportamento observado?
+R: - O motivo foi a quantidade de threads e processos, pois quanto mais threads e processos maior o tempo, visto que um processo ou thread não pode ser executado em mais de um núcleo de processamento ao mesmo tempo, e o tempo de execução é maior que o tempo de comunicação entre os processos e threads.
+b) Qual o motivo dos resultados obtidos no experimento E2? O que pode ter causado o
+comportamento observado?
+R: - Quanto menor o numero de processos e threads, menor o tempo de execução, pois o tempo de comunicação entre os processos e threads é menor que o tempo de execução.
+c) Qual é o valor de P ideal para a multiplicação das matrizes M1 e M2? Justifique sua resposta através dos experimentos realizados.
+R: - O valor ideal é 1, pois o tempo de execução é menor que o tempo de comunicação entre os processos e threads.
+
+Apresentação youtube: https://youtu.be/kcdZ0R72JOg
